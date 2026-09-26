@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planned Purchases</title>
+  <style>
+    :root { color-scheme: light dark; font-family: Arial, sans-serif; }
+    body { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.5; }
+    h1 { margin-bottom: .25rem; }
+    .sub { opacity: .75; margin-top: 0; }
+    .item { border: 1px solid #8885; border-radius: 12px; padding: 16px; margin: 14px 0; }
+    .item h2 { margin: 0 0 8px; font-size: 1.1rem; }
+    .meta { display: grid; grid-template-columns: repeat(auto-fit,minmax(130px,1fr)); gap: 8px; font-size: .95rem; }
+    .buy { display: inline-block; margin-top: 12px; padding: 9px 13px; border: 1px solid currentColor; border-radius: 8px; text-decoration: none; }
+    .purchased { opacity: .58; }
+    .purchased h2, .purchased .meta, .purchased .buy { text-decoration: line-through; }
+    footer { margin-top: 32px; font-size: .85rem; opacity: .65; }
+  </style>
+</head>
+<body>
+  <h1>Planned Purchases</h1>
+  <p class="sub">A simple public shopping list. Purchased items stay visible but are struck through.</p>
+
+  <article class="item">
+    <h2>Gardeon 2x Wooden Sun Loungers - White</h2>
+    <div class="meta">
+      <div><strong>Quantity:</strong> 2</div>
+      <div><strong>Price:</strong> AUD 353.36 delivered</div>
+      <div><strong>Added:</strong> 27 Sep 2026</div>
+    </div>
+    <a class="buy" href="https://www.kmart.com.au/product/gardeon-2x-sun-lounge-wooden-lounger-outdoor-furniture-day-bed-wheel-patio-white-110064247/" target="_blank" rel="noopener">View item</a>
+  </article>
+
+  <footer>Only public-safe shopping details are published here. Private notes and project context remain in the private purchase register.</footer>
+</body>
+</html>
