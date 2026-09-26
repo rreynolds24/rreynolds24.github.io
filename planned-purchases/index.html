@@ -6,32 +6,198 @@
   <title>Planned Purchases</title>
   <style>
     :root { color-scheme: light dark; font-family: Arial, sans-serif; }
-    body { max-width: 900px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.5; }
+    body { max-width: 980px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.45; }
     h1 { margin-bottom: .25rem; }
+    h2.section { margin-top: 30px; border-bottom: 1px solid #8885; padding-bottom: 6px; }
     .sub { opacity: .75; margin-top: 0; }
-    .item { border: 1px solid #8885; border-radius: 12px; padding: 16px; margin: 14px 0; }
-    .item h2 { margin: 0 0 8px; font-size: 1.1rem; }
-    .meta { display: grid; grid-template-columns: repeat(auto-fit,minmax(130px,1fr)); gap: 8px; font-size: .95rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(270px,1fr)); gap: 14px; }
+    .item { border: 1px solid #8885; border-radius: 12px; padding: 16px; }
+    .item h3 { margin: 0 0 10px; font-size: 1.05rem; }
+    .meta { display: grid; gap: 6px; font-size: .94rem; }
     .buy { display: inline-block; margin-top: 12px; padding: 9px 13px; border: 1px solid currentColor; border-radius: 8px; text-decoration: none; }
-    .purchased { opacity: .58; }
-    .purchased h2, .purchased .meta, .purchased .buy { text-decoration: line-through; }
-    footer { margin-top: 32px; font-size: .85rem; opacity: .65; }
+    .purchased { opacity: .55; }
+    .purchased h3, .purchased .meta, .purchased .buy { text-decoration: line-through; }
+    footer { margin-top: 34px; font-size: .85rem; opacity: .68; }
   </style>
 </head>
 <body>
   <h1>Planned Purchases</h1>
-  <p class="sub">A simple public shopping list. Purchased items stay visible but are struck through.</p>
+  <p class="sub">Public shopping list. Purchased items stay visible but are struck through.</p>
 
-  <article class="item">
-    <h2>Gardeon 2x Wooden Sun Loungers - White</h2>
-    <div class="meta">
-      <div><strong>Quantity:</strong> 2</div>
-      <div><strong>Price:</strong> AUD 353.36 delivered</div>
-      <div><strong>Added:</strong> 27 Sep 2026</div>
-    </div>
-    <a class="buy" href="https://www.kmart.com.au/product/gardeon-2x-sun-lounge-wooden-lounger-outdoor-furniture-day-bed-wheel-patio-white-110064247/" target="_blank" rel="noopener">View item</a>
-  </article>
+  <h2 class="section">Home & Garden</h2>
+  <div class="grid">
+    <article class="item">
+      <h3>Gardeon 2x Wooden Sun Loungers - White</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 2 loungers</div>
+        <div><strong>Price:</strong> AUD 353.36 delivered</div>
+        <div><strong>Added:</strong> 27 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.kmart.com.au/product/gardeon-2x-sun-lounge-wooden-lounger-outdoor-furniture-day-bed-wheel-patio-white-110064247/" target="_blank" rel="noopener">View item</a>
+    </article>
 
-  <footer>Only public-safe shopping details are published here. Private notes and project context remain in the private purchase register.</footer>
+    <article class="item">
+      <h3>Grunt 10mm x 100m Natural Sisal Rope</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 2 x 100m rolls</div>
+        <div><strong>Price:</strong> AUD 88 each / AUD 176 total before delivery</div>
+        <div><strong>Added:</strong> 14 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.bunnings.com.au/grunt-10mm-x-100m-sisal-twisted-rope_p4310383" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>Outdoor PIR Security Light</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> TBD</div>
+        <div><strong>Price:</strong> AUD 62 candidate</div>
+        <div><strong>Added:</strong> 14 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.bunnings.com.au/arlec-30w-triple-head-led-security-flood-light-with-pir-motion-sensor_p0497398" target="_blank" rel="noopener">View candidate</a>
+    </article>
+
+    <article class="item">
+      <h3>Ryobi 18V ONE+ Line Trimmer</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 99 tool-only candidate</div>
+        <div><strong>Added:</strong> 14 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.bunnings.com.au/ryobi-18v-one-25-30cm-cordless-line-trimmer-tool-only_p0208315" target="_blank" rel="noopener">View candidate</a>
+    </article>
+
+    <article class="item">
+      <h3>Ryobi 18V ONE+ Battery / Charger Expansion</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1+ / final pack count TBD</div>
+        <div><strong>Price:</strong> AUD 139 starter-kit candidate</div>
+        <div><strong>Added:</strong> 14 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.bunnings.com.au/ryobi-18v-one-4-0ah-starter-kit-r18sk14g_p0585310" target="_blank" rel="noopener">View candidate</a>
+    </article>
+  </div>
+
+  <h2 class="section">Car & Detailing</h2>
+  <div class="grid">
+    <article class="item">
+      <h3>Meguiar's Mega Drying Towel 900 x 600mm</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 45 current sale price</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.supercheapauto.com.au/p/meguiars-meguiars-mega-drying-towel-900-x-600mm/657634.html" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>Meguiar's Perfect Clarity Glass Cleaner</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 26.99</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.meguiars.com.au/product/perfect-clarity-glass-cleaner/" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>Meguiar's No Smear Glass Cloths - Twin Pack</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1 twin pack</div>
+        <div><strong>Price:</strong> AUD 22.99</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.meguiars.com.au/product/no-smear-glass-cloth-twin-pack/" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>ToolPRO 8-Compartment Organiser</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 12.99</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.supercheapauto.com.au/p/toolpro-toolpro-organiser-8-compartment/360966.html" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>5-inch Dual-Action Polisher Kit</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1 kit</div>
+        <div><strong>Price:</strong> AUD 355 candidate</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.supercheapauto.com.au/p/mothers-mothers-wax-attack-professional-polisher-kit/SPO8286157.html" target="_blank" rel="noopener">View candidate</a>
+    </article>
+
+    <article class="item">
+      <h3>BMW A53 Platinum Bronze Basecoat + Clear Coat</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> up to 2 basecoat + 2 clear cans</div>
+        <div><strong>Price:</strong> TBD</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.google.com/search?q=BMW+A53+Platinum+Bronze+automotive+paint+Australia" target="_blank" rel="noopener">Search item</a>
+    </article>
+
+    <article class="item">
+      <h3>COLOURLOCK Leather Fresh Dye Kit Large</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1 kit</div>
+        <div><strong>Price:</strong> from AUD 184.99</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.colourlockaustralia.com.au/products/leather-fresh-dye-kit-large" target="_blank" rel="noopener">View candidate</a>
+    </article>
+
+    <article class="item">
+      <h3>Narva C5W 12V 5W Festoon Globes - 2 Pack</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 2 packs planned across the cars</div>
+        <div><strong>Price:</strong> AUD 5.85 RRP per pack</div>
+        <div><strong>Added:</strong> 25 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.narva.com.au/products/47254BL/12v-5w-sv8-5-8-c5w-festoon-globes--blister-pack-of-2-" target="_blank" rel="noopener">View item</a>
+    </article>
+  </div>
+
+  <h2 class="section">Technology & Repairs</h2>
+  <div class="grid">
+    <article class="item">
+      <h3>Dell Latitude 7400 Battery Cable VVFNX / 0VVFNX</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 12 + delivery preferred option</div>
+        <div><strong>Added:</strong> 13 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://apacnotebooks.com.au/collections/battery-cables" target="_blank" rel="noopener">View item</a>
+    </article>
+
+    <article class="item">
+      <h3>BrainChip AKD1500 PCIe Development Card</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> US$149 before tax/shipping</div>
+        <div><strong>Added:</strong> 21 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://shop.brainchipinc.com/products/akd1500-pcie-development-card" target="_blank" rel="noopener">View item</a>
+    </article>
+  </div>
+
+  <h2 class="section">Personal</h2>
+  <div class="grid">
+    <article class="item">
+      <h3>Ray-Ban RB4202 Andy 55-17 - Black / Green</h3>
+      <div class="meta">
+        <div><strong>Quantity:</strong> 1</div>
+        <div><strong>Price:</strong> AUD 218 current OPSM listing</div>
+        <div><strong>Added:</strong> 20 Sep 2026</div>
+      </div>
+      <a class="buy" href="https://www.opsm.com.au/rb4202-andy/8053672188868" target="_blank" rel="noopener">View item</a>
+    </article>
+  </div>
+
+  <footer>
+    Prices are planning figures and can change. Family gift ideas and private health-related purchases are intentionally not published here.
+  </footer>
 </body>
 </html>
